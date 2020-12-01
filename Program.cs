@@ -25,11 +25,6 @@ namespace AdventOfCode2020
 
             file.Close();
 
-            if (input.Count(value => value == 1000) == 2)
-            {
-                return 1000 * 1000;
-            }
-
             for(int i = 0; i < input.Count(); i++)
             {
                 var firstNumber = input[i];
