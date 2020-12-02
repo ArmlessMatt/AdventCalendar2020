@@ -35,7 +35,6 @@ namespace AdventOfCode2020.Challenges
                 int firstSpaceIndex = line.IndexOf(' ');
                 int lastSpaceIndex = line.LastIndexOf(' ');
 
-                var t = line.Substring(0, dashIndex);
                 int lowerNumber = int.Parse(line.Substring(0, dashIndex));
                 int higherNumber = int.Parse(line.Substring(dashIndex + 1, firstSpaceIndex - dashIndex - 1));
                 char mandatoryCharacter = line.Substring(columnIndex - 1, 1)[0];
