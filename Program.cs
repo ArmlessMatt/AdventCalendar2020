@@ -1,6 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using AdventOfCode2020.Challenges;
+using System;
 
 namespace AdventOfCode2020
 {
@@ -8,41 +7,10 @@ namespace AdventOfCode2020
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Day 1 : " + Day1Challenge1());
-        }
+            var day2 = new Day2();
 
-        public static int Day1Challenge1()
-        {
-            var input = new List<int>();
-
-            string line;
-            System.IO.StreamReader file =
-                new System.IO.StreamReader(@".\Input\day1.txt");
-            while ((line = file.ReadLine()) != null)
-            {
-                input.Add(int.Parse(line));
-            }
-
-            file.Close();
-
-            for(int i = 0; i < input.Count(); i++)
-            {
-                var firstNumber = input[i];
-                for (int j = i + 1; j < input.Count(); j++)
-                {
-                    var secondNumber = input[j];
-                    for (int k = j + 1; k < input.Count(); k++)
-                    {
-                        var thirdNumber = input[k];
-                        if (firstNumber + secondNumber + thirdNumber == 2020)
-                        {
-                            return firstNumber * secondNumber * thirdNumber;
-                        }
-                    }
-                }
-            }
-
-            return 0;
+            Console.WriteLine("Day 2-1 : " + day2.AnswerFirstChallenge());
+            Console.WriteLine("Day 2-2 : " + day2.AnswerSecondChallenge());
         }
     }
 }
