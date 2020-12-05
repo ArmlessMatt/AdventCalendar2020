@@ -7,10 +7,10 @@ namespace AdventOfCode2020
     {
         static void Main(string[] args)
         {
-            var day3 = new Day3();
+            var day4 = new Day4();
 
-            Console.WriteLine("Day 3-1 : " + day3.AnswerFirstChallenge());
-            Console.WriteLine("Day 3-2 : " + day3.AnswerSecondChallenge());
+            Console.WriteLine("Day 4-1 : " + day4.AnswerFirstChallenge());
+            Console.WriteLine("Day 4-2 : " + day4.AnswerSecondChallenge());
         }
     }
 }
